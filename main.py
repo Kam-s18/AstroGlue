@@ -333,7 +333,8 @@ class AstroGlue:
                 widget.destroy()
             file_path = filedialog.askopenfilename(filetypes=[("NumPy files", "*.npy"), ("CSV files", "*.csv")])
             if file_path:
-                file_label.config(text=file_path)
+                basename = os.path.basename(file_path)
+                file_label.config(text=basename)
                 process_file(file_path)
 
         def process_file(file_path):
