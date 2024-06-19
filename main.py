@@ -13,6 +13,7 @@ from tkinter import filedialog, Scrollbar, Canvas
 from tkinter import ttk
 import webbrowser
 import re
+import os.path
 
 class AstroGlue:
     """AstroGlue acts as a bridge between AstroLink clustering algorithm and GlueViz data visualization package. 
