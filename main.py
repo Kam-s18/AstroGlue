@@ -1,4 +1,13 @@
-#Importing necessary libraries
+#Importing Standard librarires
+import tkinter as tk
+from tkinter import *
+from tkinter import filedialog, Scrollbar, Canvas
+from tkinter import ttk
+import webbrowser
+import re
+import os.path
+
+#Importing third party librarires
 import numpy as np
 import pandas as pd
 from glue.core import DataCollection
@@ -7,13 +16,6 @@ from glue_qt.viewers.scatter import ScatterViewer
 from glue_vispy_viewers.scatter.scatter_viewer import VispyScatterViewer
 from glue_qt.viewers.histogram import HistogramViewer
 from astrolink import AstroLink
-import tkinter as tk
-from tkinter import *
-from tkinter import filedialog, Scrollbar, Canvas
-from tkinter import ttk
-import webbrowser
-import re
-import os.path
 
 class AstroGlue:
     """AstroGlue acts as a bridge between AstroLink clustering algorithm and GlueViz data visualization package. 
