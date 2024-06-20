@@ -1,6 +1,6 @@
 AstroGlue
 -----------------
-AstroGlue serves as a bridge between the AstroLink clustering algorithm and the Glue visualization tool. 
+AstroGlue serves as a bridge between the [AstroLink](https://github.com/william-h-oliver/astrolink) clustering algorithm and the [Glue](https://github.com/glue-viz/glue) visualization tool. 
 
 AstroLink is a versatile clustering algorithm designed to extract meaningful hierarchical structures from astrophysical datasets. It has the capability to identify an arbitrary number of clusters with arbitrary shapes from user-defined data sets. The clustering structure can be visualized via the 2-dimensional AstroLink ordered-density plot.
 
