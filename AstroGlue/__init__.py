@@ -1,6 +1,7 @@
 # The version file is generated automatically by setuptools_scm
 from AstroGlue._version import version as __version__
 from .AstroGlue import AstroGlue
+import pandas as pd
   
 file_path = "../data/newhalo_young.csv" #Path to your npy or csv file (use //)
 data_df = pd.read_csv(file_path) # Your DataFrame initialization (use pd.read_csv or convert you numpy file to dataframe with column names)
