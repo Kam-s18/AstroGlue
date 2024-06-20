@@ -32,7 +32,7 @@ These inputs can be provided in two ways:
 
 a) Using the tkinter GUI: 
 ---------
-If the values of the variables are not input using the set_variables() method, a tkinter window 
+If the values of the variables are not input using the `set_variables()` method, a tkinter window 
 is launched prompting the user to input all the variables required to run AstroLink and plot on Glue. 
 
 Providing inputs through this method is quite straighforward and requires only the following lines of code:
