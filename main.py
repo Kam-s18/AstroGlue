@@ -1,13 +1,4 @@
-#Importing Standard librarires
-import tkinter as tk
-from tkinter import *
-from tkinter import filedialog, Scrollbar, Canvas
-from tkinter import ttk
-import webbrowser
-import re
-import os.path
-
-#Importing third party librarires
+#Importing necessary libraries
 import numpy as np
 import pandas as pd
 from glue.core import DataCollection
@@ -16,6 +7,13 @@ from glue_qt.viewers.scatter import ScatterViewer
 from glue_vispy_viewers.scatter.scatter_viewer import VispyScatterViewer
 from glue_qt.viewers.histogram import HistogramViewer
 from astrolink import AstroLink
+import tkinter as tk
+from tkinter import *
+from tkinter import filedialog, Scrollbar, Canvas
+from tkinter import ttk
+import webbrowser
+import re
+import os.path
 
 class AstroGlue:
     """AstroGlue acts as a bridge between AstroLink clustering algorithm and GlueViz data visualization package. 
@@ -37,7 +35,7 @@ class AstroGlue:
     ordered-density plot of a particular feature space and visualize those clusters in other plots, i.e, all the plots are linked.
     
     Parameters
-    ----------
+    ---------
     Note that all parameters of AstroGlue are optional. If passed and set using set_variables() method, the user would not see the
     tkinter GUI. If not passed, then the user will be prompted to input the parameters through the GUI.
     
@@ -421,17 +419,17 @@ class AstroGlue:
         def selected(event, f2_row, clicked):
             s = clicked.get()
             if s == "2D Scatter Plot (rectilinear)":
-                type_l.append("2D Scatter Plot (rectilinear)")
-                create_dropdowns(2, f2_row)
+                #type_l.append()
+                create_dropdowns(2, f2_row,"2D Scatter Plot (rectilinear)")
             elif s == "3D Scatter Plot":
-                create_dropdowns(3, f2_row)
-                type_l.append("3D Scatter Plot")
+                #type_l.append("3D Scatter Plot")
+                create_dropdowns(3, f2_row,"3D Scatter Plot")
             elif s=="1D Histogram":
-                create_dropdowns(1,f2_row)
-                type_l.append("1D Histogram")
+                #type_l.append("1D Histogram")
+                create_dropdowns(1,f2_row,"1D Histogram")
             elif s=="2D Scatter Plot (aitoff)":
-                type_l.append("2D Scatter Plot (aitoff)")
-                create_dropdowns(2,f2_row)
+                #type_l.append("2D Scatter Plot (aitoff)")
+                create_dropdowns(2,f2_row,"2D Scatter Plot (aitoff)")
 
         def select_all(listbox):
             listbox.select_set(0,END)
@@ -625,7 +623,7 @@ class AstroGlue:
                 b2 = Button(col_entry_inner_frame2, text="Delete Previous Plot", command=lambda: del_prev_plot(f2_row),cursor="hand2")
                 b2.grid(row=f2_row, column=1, pady=5)
 
-        def create_dropdowns(num_dropdowns, f2_row):
+        def create_dropdowns(num_dropdowns, f2_row,name):
             dropdowns = []
             options = data_df.columns
             try:
@@ -654,6 +652,7 @@ class AstroGlue:
                 dropdowns.append(clicked)
             f2_row += 1
             dropdown_l.append(dropdowns)
+            type_l.append(name)
             b1 = Button(col_entry_inner_frame2, text="Create a new plot", command=lambda: show_plot_options(f2_row),cursor="hand2")
             b1.grid(row=f2_row, column=0, pady=5)
 
@@ -817,4 +816,3 @@ class AstroGlue:
         end_button.pack(padx=5,pady=1)
 
         root.mainloop()
-    
