@@ -64,7 +64,7 @@ INSERT VIDEO HERE
 
 b) Using set_variables() method:
 --------------------------------------------
-If the user already has the variables in python stirngs/lists, then set_variables() method can be used to input the variables into the AstroGlue class without having to use the GUI. This can be done with the following lines of code:
+If the user already has the variables in python stirngs/lists, then `set_variables()` method can be used to input the variables into the AstroGlue class without having to use the GUI. This can be done with the following lines of code:
 
 ```python
 file_path = "newhalo_young.csv" #Path to your npy or csv file (use // for absolute path)
