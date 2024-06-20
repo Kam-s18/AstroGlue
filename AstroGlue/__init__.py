@@ -2,7 +2,7 @@
 from AstroGlue._version import version as __version__
 from .AstroGlue import AstroGlue
   
-file_path = "../data/newhalo_young.npy" #Path to your npy or csv file (use //)
+file_path = "../data/newhalo_young.csv" #Path to your npy or csv file (use //)
 data_df = pd.read_csv(file_path) # Your DataFrame initialization (use pd.read_csv or convert you numpy file to dataframe with column names)
 feature_spaces = [["x (kpc)", "y (kpc)", "z (kpc)"],["vx", "vy", "vz"]] # Your list of feature spaces
 adaptive_list = [0,0] # Your list of adaptive parameters
