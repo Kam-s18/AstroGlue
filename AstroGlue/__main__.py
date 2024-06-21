@@ -1,7 +1,10 @@
-if __name__ == "__main__":
-    main()
+from AstroGlue import AstroGlue
+
 
 def main():
-    from AstroGlue import AstroGlue
     c = AstroGlue()
     c.run()
+
+
+if __name__ == "__main__":
+    main()
