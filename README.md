@@ -59,9 +59,6 @@ The user can select various subsets in any plot and visualize those data points 
 
 ![image](https://github.com/Kam-s18/AstroGlue/assets/105807625/79706ea7-48c2-4499-9c98-03b3ff91e892)
 
-The following video explains the various features of this AstroGlue tkinter window that lets user to input all the required variables to run AstroLink and launch Glue with the chosen plots:
-INSERT VIDEO HERE
-
 b) Using set_variables() method:
 --------------------------------------------
 If the user already has the variables in python stirngs/lists, then `set_variables()` method can be used to input the variables into the AstroGlue class without having to use the GUI. This can be done with the following lines of code:
