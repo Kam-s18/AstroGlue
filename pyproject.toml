@@ -51,6 +51,8 @@ docs = [
     "sphinx_rtd_theme",
 ]
 
+[project.scripts]
+AstroGlue = "AstroGlue.__main__:main"
 
 # The following section contains setuptools-specific configuration
 # options. For a full reference of available options, check the overview
