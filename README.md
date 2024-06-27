@@ -87,7 +87,7 @@ astroglue.run()
 
 This would run the astrolink clustering algorithm and launch a Glue window with the required plots as in the previous example. If the user does not wish to run the astrolink algorithm, the feature_spaces can be declared as an empty list.
 
-## Preparing your data
+Preparing your data
 ---------------------------------
 AstroGlue currently supports only .NPY and .CSV file formats. If the user's database is of any other file formats, it has to be converted to one of the two supported formats.
 
