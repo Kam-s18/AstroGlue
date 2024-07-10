@@ -30,8 +30,8 @@ dependencies = [
     "numpy",
     "pandas",
     "PyQt5",
-    "glueviz==1.2.0",
-    "glue-qt==0.3.1",
+    "glueviz",
+    "glue-qt",
     "glue-vispy-viewers==1.1.0",
     "astrolink"
 ]
