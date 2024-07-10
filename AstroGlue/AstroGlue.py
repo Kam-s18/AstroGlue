@@ -360,7 +360,7 @@ class AstroGlue:
 
             for col in df.columns:
                 tree.heading(col, text=col)
-                tree.column(col, width=100, anchor='center') 
+                tree.column(col, width=100, anchor='center',stretch=False) 
 
             max_rows = 50
             for i, row in df.iterrows():
@@ -682,6 +682,8 @@ class AstroGlue:
             b1 = Button(col_entry_inner_frame2, text="Create a new plot", command=lambda: show_plot_options(f2_row),cursor="hand2")
             b1.grid(row=f2_row, column=0, pady=5)
 
+        os.environ["MPLBACKEND"] = "agg"
+
         root = tk.Tk()
         root.title("AstroGlue")
 
@@ -704,14 +706,15 @@ class AstroGlue:
         table_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
         tree = ttk.Treeview(table_frame)
-        tree.pack(side="left", fill="both", expand=True)
+        tree.grid(row=0, column=0, sticky='nsew')
 
         table_scrollbar_y = Scrollbar(table_frame, orient="vertical", command=tree.yview)
         table_scrollbar_x = Scrollbar(table_frame, orient="horizontal", command=tree.xview)
+        table_scrollbar_y.grid(row=0, column=1, sticky='ns')
+        table_scrollbar_x.grid(row=1, column=0, sticky='ew')
         tree.configure(yscroll=table_scrollbar_y.set, xscroll=table_scrollbar_x.set)
-        table_scrollbar_y.pack(side="right", fill="y")
-        table_scrollbar_x.pack(side="bottom", fill="x")
-
+        table_frame.grid_rowconfigure(0, weight=1)
+        table_frame.grid_columnconfigure(0, weight=1)
         main_frame = Frame(root)
         main_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
@@ -781,8 +784,8 @@ class AstroGlue:
         col_entry_scrollbar_x3.pack(side="bottom", fill="x")
 
         main_frame.grid_columnconfigure(0, weight=1, uniform="group1")
-        main_frame.grid_columnconfigure(1, weight=3, uniform="group1")
-        main_frame.grid_columnconfigure(2, weight=2, uniform="group1")
+        main_frame.grid_columnconfigure(1, weight=1, uniform="group1")
+        main_frame.grid_columnconfigure(2, weight=1, uniform="group1")
 
         def close_win():
             root.destroy()
