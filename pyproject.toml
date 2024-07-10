@@ -27,11 +27,11 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
-    "numpy",
+    "numpy<2.0.0",
     "pandas",
     "PyQt5",
     "glueviz==1.2.0",
-    "glue-qt",
+    "glue-qt==0.3.1",
     "glue-vispy-viewers==1.1.0",
     "astrolink"
 ]
