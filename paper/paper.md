@@ -21,7 +21,7 @@ authors:
     affiliation: "2, 3"
 
 affiliations:
-- name: National Institute of Technology, Department of Instrumentation and Control Engineering, Tiruchirappalli - 620015, Tamil Nadu, India
+ - name: National Institute of Technology, Department of Instrumentation and Control Engineering, Tiruchirappalli - 620015, Tamil Nadu, India
    index: 1
  - name: Universit&auml;t Heidelberg, Interdisziplin&auml;res Zentrum f&uuml;r Wissenschaftliches Rechnen, Im Neuenheimer Feld 205, D-69120 Heidelberg, Germany
    index: 2
