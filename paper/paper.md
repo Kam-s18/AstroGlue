@@ -39,11 +39,9 @@ Astronomers tend to identify structures in observational data sets using one of 
 
 The interactive and easy-to-use GUI of `AstroGlue` eliminates the need for any additional coding, thereby making the process of identifying and visualizing clusters much more efficient and accurate than existing methods. `AstroGlue` facilitates the easy import of astrophysical data sets and provides various customization options, enabling users to streamline their analysis. Users have the option to either work with the GUI provided or programmatically with the `AstroGlue` class methods. At the time of writing, the authors are not aware of any existing implementations that offer these interactive capabilities and usability options. 
 ![`AstroGlue` GUI with a data set imported, plots chosen and `AstroLink` featurespace set.](AstroGlue_example/1.png) 
-<br />
-<br />
+
 ![`Glue` session launched with all chosen plots and certain chosen clusters highlighted.](AstroGlue_example/2.png)
-<br />
-<br />
+
 ![`Glue` session with corresponding clusters in position and velocity space marked by arrows.](AstroGlue_example/3.png)
 
 
