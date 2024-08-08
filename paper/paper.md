@@ -37,13 +37,13 @@ bibliography: paper.bib
 # Statement of need
 Astronomers tend to identify structures in observational data sets using one of two methods - a standard clustering algorithm [@ElAziz2016;@Malhan2018b;@Malhan2018c;@Hasselquist2019;@CastroGinard2019;@PriceJones2019;@Kounkel2019;@Hunt2021;@Ibata2021;@Malhan2022;@Pearson2022;@Swiggum2024] or visual inspection [@Arifyanto2006;@Duffau2006;@Williams2011;@Helmi2017;@Helmi2018;@Belokurov2018]. However, standard clustering algorithms often lack astrophysical robustness, while structures detected via visual inspection require verification using additional techniques. `AstroGlue` addresses the limitations associated with both of the aforementioned methods by combining the statistically and astrophysically robust clustering algorithm, `AstroLink` with the multi-dimensional linked-data exploration tool, `Glue`.
 
-The interactive and easy-to-use GUI of `AstroGlue` eliminates the need for any additional coding, thereby making the process of identifying and visualizing clusters much more efficient and accurate than existing methods. `AstroGlue` facilitates the easy import of astrophysical data sets and provides various customization options, enabling users to streamline their analysis. Users have the option to either work with the GUI provided or programmatically with the `AstroGlue` class methods. At the time of writing, the authors are not aware of any existing implementations that offer these interactive capabilities and usability options. 
+The interactive and easy-to-use GUI of `AstroGlue` eliminates the need for any additional coding, thereby making the process of identifying and visualizing clusters much more efficient and accurate than existing methods. Users have the option to either work with the GUI provided or programmatically with the `AstroGlue` class methods. `AstroGlue` facilitates the easy import of astrophysical data sets and provides various customization options, enabling users to streamline their analysis. At the time of writing, the authors are not aware of any existing implementations that offer these interactive capabilities and usability options. 
 
-![`AstroGlue` GUI with a data set imported, plots chosen and `AstroLink` featurespace set.](AstroGlue_example/1.png) 
+![`AstroGlue` GUI with a data set imported, columns labelled, plots chosen, and `AstroLink` feature space set.](AstroGlue_example/1.png) 
 
-![`Glue` session launched with all chosen plots and certain chosen clusters highlighted.](AstroGlue_example/2.png)
+![`Glue` session launched with all chosen plots (including the `AstroLink` ordered-density plot) and a few highlighted user-chosen clusters. The lower panel shows the process a user takes to highlight a cluster found by AstroLink."](AstroGlue_example/2.png)
 
-![`Glue` session with corresponding clusters in position and velocity space marked by arrows.](AstroGlue_example/3.png)
+![`Glue` session with all highlighted clusters (following the action shown in Figure 2) and overlayed arrows to mark their correspondance to the ordered-density plot."](AstroGlue_example/3.png)
 
 
 # Acknowledgements
