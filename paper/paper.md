@@ -1,5 +1,5 @@
 ---
-title: 'AstroGlue: An exploratory clustering analysis tool for astrophyiscal data sets'
+title: 'AstroGlue: An exploratory clustering analysis tool for astrophysical data sets'
 
 tags:
   - Python
